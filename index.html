@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Condominio</title>
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div
+          class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">JavaCity<br>A melhor casa para suas linguagens!</h2>
+          <p data-aos="fade-up" data-aos-delay="100">O melhor DataBase para sua funções predileta, todas as suas classes
+            confortavelmente relaxada em nossos servidores.</p>
+
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+    </div>
+  </section><!-- End -->
+
+  <!-- =======  Condominio ======= -->
+  <section id="condominio" class="condominio">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Condominio</h2>
+        <p>Condominio<span>novo</span>Condominio</p>
+      </div>
+
+      <div class="row g-0">
+        <!--Cadastro condominio-->
+        <div class="col-lg 4 d-flex align-items-center reservation-form-bg">
+          <div>
+            <div class="section-header">
+              <p><span>Condominio</span></p>
+            </div>
+            <form action="" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+              <div class=" gy-4 ">
+
+                <div class="col-lg col-md">
+                  <input type="text" name="nome_condominio" class="form-control" id="nome_condominio"
+                    placeholder="Nome do Condominio" data-rule="minlen:4"
+                    data-msg="Por favor insira pelo menos 1 caracteres">
+                  <div class="validate"></div>
+                </div>
+
+                <div class="col-lg col-md">
+                  <input type="text" class="form-control" name="cidade_codominio" id="cidade_codominio"
+                    placeholder="Cidade do Condominio" data-rule="minlen:1" data-msg="Insira uma cidade Real">
+                  <div class="validate"></div>
+                </div>
+
+                <div class="my-2 gy-4 row justify-content-center">
+
+                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="cadasrar"
+                    value="Cadastrar" />
+                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="Consultar"
+                    value="Consultar" />
+                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="Atualizar"
+                    value="Atualizar" />
+                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="Deletar"
+                    value="Deletar" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end Cadastro Usuario-->
+
+        <!-- Cadastro Morador -->
+        <div class="col-lg-4 d-flex align-items-center reservation-form-bg">
+
+          <div>
+            <div class="section-header">
+              <p><span>Morador</span></p>
+            </div>
+            <form action="" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+              <div class=" gy-4 ">
+
+                <div class="col-lg col-md">
+                  <input type="number" name="id_morador" class="form-control" id="id_morador"
+                    placeholder="id do Morador" data-rule="minlen:4"
+                    data-msg="Por favor insira pelo menos 4 caracteres">
+                  <div class="validate"></div>
+                </div>
+
+                <div class="col-lg col-md">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome"
+                    data-rule="minlen:4" data-msg="Por favor insira pelo menos 4 caracteres">
+                  <div class="validate"></div>
+                </div>
+
+                <div class="col-lg col-md">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email"
+                    data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validate"></div>
+                </div>
+
+                <div class="col-lg col-md">
+                  <input type="number" class="form-control" name="cep" id="cep" placeholder="CEP" data-rule="minlen:8"
+                    data-msg="Por favor insira CEP sem tracinho">
+                  <div class="validate"></div>
+                </div>
+
+                <div class="my-2 gy-4 row justify-content-center">
+                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="cadasrar"    value="Cadastrar" />
+                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="Consultar"   value="Consultar" />
+                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="Atualizar"   value="Atualizar" />
+                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="Deletar"     value="Deletar" />
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div><!-- end Cadastro Condominio-->
+
+        <!-- Cobrança -->
+        <div class="col-lg-4 col-md-4 d-flex align-items-center reservation-form-bg">
+          <div>
+            <div class="section-header">
+              <p><span>Cobrança</span></p>
+            </div>
+            <form action="" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+              <div class="gy-2 ">
+
+<!--    "id_morador": "",
+        "id_condominio": "",
+        "tipo_pagamento": "" {pix, boleto, credito, debito},
+        "valor_pagamento": "",
+        "vencimento": ""  -->
+
+                <div class="col-lg col-md">
+                  <input type="text" name="id_cob_morador" class="form-control" id="id_cob_morador" placeholder="Id do Morador" >
+                  <div class="validate"></div>
+                </div>
+                
+                <div class="col-lg col-md">
+                  <input type="text" class="form-control" name="id_pagamento" id="id_pagamento" placeholder="Id do condominio" >
+                  <div class="validate"></div>
+                </div>
+                
+
+
+
+                <div class="col-lg col-md">
+                  <input type="text" class="form-control" name="id_pagamento" id="id_pagamento" placeholder="Id do condominio" >
+                  <div class="validate"></div>
+                </div>
+
+                <div class="col-lg col-md">
+                  <input type="text" class="form-control" name="valor_pagamento" id="valor_pagamento" placeholder="Valor do pagamento" data-msg="">
+                  <div class="validate"></div>
+                </div>
+
+                <div class="col-lg col-md">
+                  <input type="number" class="form-control" name="cep" id="cep" placeholder="CEP" data-msg="">
+                  <div class="validate"></div>
+                </div>
+
+                <div class="my-2 gy-4 justify-content-center">
+
+                  <input class="text-center col-lg mx-1 btn btn-info text-white" type="submit" name="cadasrar" value="Pagar" />
+                
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div><!-- End Cobrança -->
+
+      </div>
+    </div>
+  </section><!-- End -->
+
+
+
+
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
