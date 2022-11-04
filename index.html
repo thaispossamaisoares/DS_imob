@@ -55,144 +55,171 @@
         <p>Condominio<span>novo</span>Condominio</p>
       </div>
 
-      <div class="row g-0">
-        <!--Cadastro condominio-->
-        <div class="col-lg 4 d-flex align-items-center reservation-form-bg">
+      <!--Cadastro condominio-->
+      <div class="row justify-content-center m-2">
+
+        <div class="col-lg mx-1 d-flex reservation-form-bg justify-content-center">
           <div>
-            <div class="section-header">
+
+            <div class="section-header  mt-0">
               <p><span>Condominio</span></p>
             </div>
+
             <form action="" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-              <div class=" gy-4 ">
 
-                <div class="col-lg col-md">
-                  <input type="text" name="nome_condominio" class="form-control" id="nome_condominio"
-                    placeholder="Nome do Condominio" data-rule="minlen:4"
-                    data-msg="Por favor insira pelo menos 1 caracteres">
-                  <div class="validate"></div>
-                </div>
+              <div class="my-2 col-lg col-md">
+                <input type="text" name="nome_condominio" class="form-control" id="nome_condominio"
+                  placeholder="Nome do Condominio" data-rule="minlen:4"
+                  data-msg="Por favor insira pelo menos 1 caracteres">
+                <div class="validate"></div>
+              </div>
 
-                <div class="col-lg col-md">
-                  <input type="text" class="form-control" name="cidade_codominio" id="cidade_codominio"
-                    placeholder="Cidade do Condominio" data-rule="minlen:1" data-msg="Insira uma cidade Real">
-                  <div class="validate"></div>
-                </div>
+              <div class="my-2 col-lg col-md">
+                <input type="text" class="form-control" name="cidade_codominio" id="cidade_codominio"
+                  placeholder="Cidade do Condominio" data-rule="minlen:1" data-msg="Insira uma cidade Real">
+                <div class="validate"></div>
+              </div>
 
-                <div class="my-2 gy-4 row justify-content-center">
+              <div class="px-2 my-2 justify-content-center row">
+                <input class="text-center col-lg p-1 m-1 btn btn-info text-white" type="submit" name="cadasrar"   value="Cadastrar" />
+                <input class="text-center col-lg p-1 m-1 btn btn-info text-white" type="submit" name="consultar"  value="Consultar"
+                data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" /> <!-- Olhar Main script do javascript-->`
 
-                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="cadasrar"
-                    value="Cadastrar" />
-                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="Consultar"
-                    value="Consultar" />
-                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="Atualizar"
-                    value="Atualizar" />
-                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="Deletar"
-                    value="Deletar" />
-                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
               </div>
             </form>
           </div>
-        </div>
-        <!-- end Cadastro Usuario-->
+
+
+          <!-- MODAL-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Recipient:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div><!-- end Cadastro condominio-->
+
+
+
 
         <!-- Cadastro Morador -->
-        <div class="col-lg-4 d-flex align-items-center reservation-form-bg">
-
+        <div class="col-lg m-1 d-flex reservation-form-bg justify-content-center">
           <div>
             <div class="section-header">
               <p><span>Morador</span></p>
             </div>
+
             <form action="" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-              <div class=" gy-4 ">
 
-                <div class="col-lg col-md">
-                  <input type="number" name="id_morador" class="form-control" id="id_morador"
-                    placeholder="id do Morador" data-rule="minlen:4"
-                    data-msg="Por favor insira pelo menos 4 caracteres">
-                  <div class="validate"></div>
-                </div>
+              <div class="my-2 col-lg col-md">
+                <input type="number" name="id_morador" class="form-control" id="id_morador" placeholder="id do Morador"
+                  data-rule="minlen:4" data-msg="Por favor insira pelo menos 4 caracteres">
+                <div class="validate"></div>
+              </div>
 
-                <div class="col-lg col-md">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome"
-                    data-rule="minlen:4" data-msg="Por favor insira pelo menos 4 caracteres">
-                  <div class="validate"></div>
-                </div>
+              <div class="my-2 col-lg col-md">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome"
+                  data-rule="minlen:4" data-msg="Por favor insira pelo menos 4 caracteres">
+                <div class="validate"></div>
+              </div>
 
-                <div class="col-lg col-md">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email"
-                    data-rule="email" data-msg="Please enter a valid email">
-                  <div class="validate"></div>
-                </div>
+              <div class="my-2 col-lg col-md">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email"
+                  data-rule="email" data-msg="Please enter a valid email">
+                <div class="validate"></div>
+              </div>
 
-                <div class="col-lg col-md">
-                  <input type="number" class="form-control" name="cep" id="cep" placeholder="CEP" data-rule="minlen:8"
-                    data-msg="Por favor insira CEP sem tracinho">
-                  <div class="validate"></div>
-                </div>
+              <div class="my-2 col-lg col-md">
+                <input type="number" class="form-control" name="cep" id="cep" placeholder="CEP" data-rule="minlen:8"
+                  data-msg="Por favor insira CEP sem tracinho">
+                <div class="validate"></div>
+              </div>
 
-                <div class="my-2 gy-4 row justify-content-center">
-                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="cadasrar"    value="Cadastrar" />
-                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="Consultar"   value="Consultar" />
-                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="Atualizar"   value="Atualizar" />
-                  <input class="text-center col-lg-2 mx-1 btn btn-info text-white" type="submit" name="Deletar"     value="Deletar" />
-                </div>
+              <div class=" px-2 my-2  justify-content-center row">
+                <input class="text-center col-lg p-1 m-1 btn btn-info text-white" type="submit" name="cadasrar"
+                  value="Cadastrar" />
 
+                <input class="text-center col-lg p-1 m-1 btn btn-info text-white" type="submit" name="cadasrar"
+                  value="Consultar" />
               </div>
             </form>
           </div>
         </div><!-- end Cadastro Condominio-->
 
         <!-- Cobrança -->
-        <div class="col-lg-4 col-md-4 d-flex align-items-center reservation-form-bg">
+        <div class="col-lg m-1 d-flex reservation-form-bg justify-content-center">
           <div>
-            <div class="section-header">
+
+            <div class="section-header ">
               <p><span>Cobrança</span></p>
             </div>
+
             <form action="" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-              <div class="gy-2 ">
 
-<!--    "id_morador": "",
-        "id_condominio": "",
-        "tipo_pagamento": "" {pix, boleto, credito, debito},
-        "valor_pagamento": "",
-        "vencimento": ""  -->
+              <div class="my-2 col-lg col-md">
+                <input type="text" name="id_cob_morador" class="form-control" id="id_cob_morador"
+                  placeholder="Id do Morador">
+                <div class="validate"></div>
+              </div>
 
-                <div class="col-lg col-md">
-                  <input type="text" name="id_cob_morador" class="form-control" id="id_cob_morador" placeholder="Id do Morador" >
-                  <div class="validate"></div>
-                </div>
-                
-                <div class="col-lg col-md">
-                  <input type="text" class="form-control" name="id_pagamento" id="id_pagamento" placeholder="Id do condominio" >
-                  <div class="validate"></div>
-                </div>
-                
+              <div class="my-2 col-lg col-md">
+                <input type="text" class="form-control" name="id_pagamento" id="id_pagamento"
+                  placeholder="Id do condominio">
+                <div class="validate"></div>
+              </div>
 
+              <div class="my-2 col-lg col-md">
+                <input type="text" class="form-control" name="tipo_pagamento" id="id_tipoPagamento"
+                  placeholder="Tipo do pagamento">
+                <div class="validate"></div>
+              </div>
 
+              <div class="my-2 col-lg col-md">
+                <input type="number" class="form-control" name="valor_pagamento" id="valor_pagamento"
+                  placeholder="Valor do pagamento">
+                <div class="validate"></div>
+              </div>
 
-                <div class="col-lg col-md">
-                  <input type="text" class="form-control" name="id_pagamento" id="id_pagamento" placeholder="Id do condominio" >
-                  <div class="validate"></div>
-                </div>
+              <div class="my-2 col-lg col-md">
+                <input type="date" class="form-control" name="data_vencimento" id="data_vencimento">
+                <div class="validate"></div>
+              </div>
 
-                <div class="col-lg col-md">
-                  <input type="text" class="form-control" name="valor_pagamento" id="valor_pagamento" placeholder="Valor do pagamento" data-msg="">
-                  <div class="validate"></div>
-                </div>
+              <div class="px-2 my-2 justify-content-center row">
 
-                <div class="col-lg col-md">
-                  <input type="number" class="form-control" name="cep" id="cep" placeholder="CEP" data-msg="">
-                  <div class="validate"></div>
-                </div>
+                <input class="text-center col-lg p-1 m-1 btn btn-info text-white" type="submit" name="cadasrar"
+                  value="Consultar" />
 
-                <div class="my-2 gy-4 justify-content-center">
-
-                  <input class="text-center col-lg mx-1 btn btn-info text-white" type="submit" name="cadasrar" value="Pagar" />
-                
-                </div>
+                <input class="text-center col-lg p-1 m-1 btn btn-info text-white" type="submit" name="cadasrar"
+                  value="Pagar" />
 
               </div>
             </form>
+
           </div>
         </div><!-- End Cobrança -->
 
@@ -201,6 +228,11 @@
   </section><!-- End -->
 
 
+  <section class="condominio">
+    <div class="container" data-aos="fade-up">
+
+    </div>
+  </section>
 
 
 
